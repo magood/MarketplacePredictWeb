@@ -1,0 +1,3 @@
+@echo off
+echo Making prediction...
+cmd /k "activate mplace & cd /d C:\Users\Matthew\Documents\Development\MarketplacePredict\Predict\MarketplacePredict & python predict.py --daysago 1 & echo Storing prediction... & cd /d C:\Users\Matthew\Documents\Development\MarketplacePredictWeb\mpweb & ..\env\Scripts\activate & python manage.py import_prediction 1"

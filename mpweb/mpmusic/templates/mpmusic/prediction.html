@@ -1,0 +1,18 @@
+<html>
+    <head>
+<style type="text/css">
+body {
+  font-family: Sans-Serif;
+}
+</style>
+    </head>
+    <body>
+        {% if prediction %}
+            <h1>{{prediction.predicted_music.name}}</h1>
+            <p>Predicted music for {{prediction.date}}</p>
+        {% else %}
+            <h1>Hold on...</h1>
+            <p>No prediction yet for today!</p>
+        {% endif %}
+    </body>
+</html
